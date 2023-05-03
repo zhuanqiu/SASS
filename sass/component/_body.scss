@@ -1,0 +1,46 @@
+body {
+    font-size: $fontSize;
+    background-color: $bgc;
+    color: #00559f;
+  }
+  
+  .wrapper {
+    @include layout(100);
+  }
+  
+  .fixed {
+    @include layout(1366px);
+    @include m() {
+      @include layout(100);
+    }
+  }
+  
+  .container {
+    background-color: #868686;
+    @include t() {
+      background-color: #30f86c;
+    }
+    @include m() {
+      background-color: #203ec0;
+    }
+  }
+  
+  section {
+    @include layout(1366px);
+  }
+  .container{
+    font-size: 60px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+  }
+  .btn_error, .btn_default, .btn_large{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #363636;
+  }
+  

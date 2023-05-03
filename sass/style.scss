@@ -1,0 +1,27 @@
+@import './base/var';
+@import './base/color';
+@import './base/font';
+@import './mixin/mixins.scss';
+@import './component/btn';
+@import './component/card';
+@import './component/form';
+@import './component/body';
+@import './component/grid';
+@import './layout/header';
+@import './layout/nav';
+@import './layout/login';
+@import './layout/footer';
+@import './page/about';
+@import './page/main';
+
+
+
+$class : top;
+
+#{$class} {
+    top: 20px;
+}
+
+//字串轉換
+
+

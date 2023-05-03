@@ -1,0 +1,43 @@
+/*css 註解*/
+$fontSize: 20px; // 數值
+$bgc: #a6a9b1; // color
+$h1-space: 10px 20px; //list
+
+//maps
+$title :(h1 : 40px,
+    h2 : 30px,
+    h3 : 20px,
+);
+
+$color : (primary : rgb(79, 79, 255),
+    secondary: #09ffad,
+    btnColor: #ff0909,
+);
+
+.ws {
+    width: 10 + 10 + px;
+    height: 20 - 10 + px;
+    margin: 10 * 10 + px ;
+    padding: 10 + 20 * 3 + px ;
+    top : round(134.534px);
+    // font : (16px / 20px);
+    }
+    
+    // 判斷式
+    // @if 
+    // @else
+    // @else if
+    
+    $borderRadius : false;
+    
+    .btn-outline {
+       @if $borderRadius {
+           border-radius: 8px;
+       }@else {
+           background-color: aqua;
+       } 
+    }
+    
+    // 斷點變數
+    $m-breakpoint:576px;
+    $t-breakpoint : 992px;

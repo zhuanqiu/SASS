@@ -1,0 +1,54 @@
+// grid
+.red {
+    background-color: #f55050;
+    height: 300px;
+    }
+    
+    .red10 {
+       background-color: #ffa9a9;
+       height: 300px;
+    
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+      }  
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+    @mixin grid($c, $r:null) {
+      @for $i from 1 through $c {
+        @if $r {
+          .col-#{$r}-#{$i} {
+            width: ($i / $c) * 100%;
+          
+          }
+        }@else {
+            .col-#{$i} {
+                width: ($i / $c) * 100%;
+       
+              }
+    
+        }
+      }
+    }
+    
+    // .col-md-1
+    // .col-sm-1
+    
+    // 桌機
+    @include grid(12);
+    
+    // // 平板 md
+    @include t() {
+      @include grid(12 , md);
+    }
+    
+    // // 手機 sm
+    @include m() {
+      @include grid(12 , sm);
+    }
